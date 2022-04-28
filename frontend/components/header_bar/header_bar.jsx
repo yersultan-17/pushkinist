@@ -13,13 +13,13 @@ const HeaderBar = ({ currentUser, logout }) => {
                 ></input>
             </form>
             <div className="ingenious-header-container">
-                <Link to="/" className="ingenious-header" >INGENIOUS</Link>
+                <Link to="/" className="ingenious-header" >PUSHKINIST.ME</Link>
             </div>
             <div className="session-btn-container">
                 <div className="username-header">
                     {currentUser.username}
                 </div>
-                <Link to="/" className="logout-header-btn" onClick={logout}>SIGN OUT</Link>
+                <Link to="/" className="logout-header-btn" onClick={logout}>Выйти</Link>
             </div>
         </div>
     ) : (
@@ -32,11 +32,10 @@ const HeaderBar = ({ currentUser, logout }) => {
                     ></input>
                 </form>
                 <div className="ingenious-header-container">
-                    <Link to="/" className="ingenious-header" >INGENIOUS</Link>
+                    <Link to="/" className="ingenious-header" >PUSHKINIST.ME</Link>
                 </div>
                 <div className="session-btn-container" >
-                    <Link to="/signup" className="session-btn" >SIGN UP</Link>
-                    <Link to="/login" className="session-btn">SIGN IN</Link>
+                    <Link to="/login" className="session-btn">Войти</Link>
                 </div>
             </div>
     );

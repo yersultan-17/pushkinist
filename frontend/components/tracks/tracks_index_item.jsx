@@ -32,7 +32,6 @@ class TracksIndexItem extends React.Component {
                 <Link to={`/api/tracks/${this.props.url}`}>
                     <div className="chart-title">
                         {this.props.title}
-                        <span className="chart-lyr">LYRICS</span>
                     </div>
                 </Link>
                 <Link to={`/api/tracks/${this.props.url}`}>

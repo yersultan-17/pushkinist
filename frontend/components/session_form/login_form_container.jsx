@@ -7,8 +7,8 @@ import { removeErrors } from "../../actions/session_actions";
 const mapStateToProps = ({ errors }) => {
     return {
         errors: errors.session,
-        formButton: "Login",
-        formHeader: "SIGN IN",
+        formButton: "Вход",
+        formHeader: "Войти",
     };
 };
 

@@ -28,10 +28,10 @@ class TracksIndex extends React.Component {
         return (
             <div className="tracks-index-container">
                 <div className="tracks-index-header">
-                    CHARTS
+                    Все произведения
                 </div>
                 <div className="tracks-index-subhead">
-                    TRENDING ON INGENIOUS
+                    Самые популярные стихотворения на PUSHKINIST.ME
                 </div>
                 <ol className="tracks-index-ol">
                     {tracks.slice(0,this.state.limit).map(((ele, i) =>
@@ -60,14 +60,6 @@ class TracksIndex extends React.Component {
         return (
             <div>
                 {this.revealMoreTracks()}
-                <div className="load-more-button-container">
-                    <button
-                        onClick={this.onLoadMore}
-                        className="load-more-button"
-                    >
-                        LOAD MORE
-                    </button>
-                </div>
             </div>
         )
 

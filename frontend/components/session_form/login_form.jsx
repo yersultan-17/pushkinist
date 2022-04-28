@@ -60,7 +60,7 @@ class LoginForm extends React.Component {
                     <div className="signup-form-header" >{this.props.formHeader}</div>
                 <form onSubmit={this.handleSubmit} className="signup-form-box" >
                     {this.props.errors.length ? <div className="error-messages">{this.renderErrors()}</div> : null}
-                    <label className="signup-label" >Ingenious Nickname
+                    <label className="signup-label" >Логин Пушкиниста
                         <br />
                         <input
                             type="text"
@@ -71,7 +71,7 @@ class LoginForm extends React.Component {
                         />
                     </label>
                     <br />
-                    <label className="signup-label">Password
+                    <label className="signup-label">Пароль
                         <br />
                         <input
                             type="password"
@@ -81,12 +81,9 @@ class LoginForm extends React.Component {
                             maxLength="70"
                         />
                     </label>
-                        <p className="terms-of-service">{this.props.termsOfService}</p>
-                    <input className="session-submit-button" type="submit" value={this.props.formButton} />
+                    <input className="login-demo-user-button" type="submit" value={this.props.formButton} />
                     <br />
                     <br />
-                    <label className="signup-label">Don"t have an account? <Link className="hyperlink-color" to={`/signup`}>Sign up here.</Link></label>
-                    <button className="login-demo-user-button" onClick={e => this.demoUser(e)}><FontAwesomeIcon icon={faUser} /> &nbsp;Log in as demo user</button>
                 </form>
             </div>
         );

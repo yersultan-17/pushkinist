@@ -32,7 +32,7 @@ class TracksShow extends React.Component {
                                     {this.props.track.artist}
                                 </div>
                                 <div className="tracks-show-album">
-                                    <span className="tracks-show-alb-txt">Album</span>{" "}
+                                    <span className="tracks-show-alb-txt">Опубликовано в:</span>{" "}
                                     {this.props.track.album}
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ class TracksShow extends React.Component {
                                         :
                                         <div>
                                             <div className="comment-login-card">
-                                                <Link to={`/login`}>Log in to add a comment.</Link>
+                                                <Link to={`/login`}>Войдите чтобы добавить комментарий.</Link>
                                             </div>
                                         </div>
                                 }

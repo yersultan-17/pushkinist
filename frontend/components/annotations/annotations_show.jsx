@@ -189,9 +189,6 @@ class AnnotationsShow extends React.Component {
             // annotations/annotated lyrics for this track.
             return (
                 <div className="anno-show-lyrics-container">
-                    <div className="anno-show-mini-title">
-                        {this.props.track.title} lyrics
-                    </div>
 
                     <div
                         className="anno-show-lyrics"
@@ -243,7 +240,7 @@ class AnnotationsShow extends React.Component {
                                         <div className="anno-login-container">
                                             <div className="anno-login-border-bar"></div>
                                             <div className="anno-login-card" >
-                                                You need to <Link to={`/login`}>log in</Link> to add annotations to a song.
+                                                Вам нужно <Link to={`/login`}>войти</Link> чтобы добавить аннотацию к произведению.
                                             </div>
                                         </div>
                                 }
@@ -256,9 +253,6 @@ class AnnotationsShow extends React.Component {
             // via this.props.lyrics
             return (
                 <div className="anno-show-lyrics-container">
-                    <div className="anno-show-mini-title">
-                        {this.props.track.title} lyrics
-                    </div>
                     <div
                         className="anno-show-lyrics"
                         onMouseDown={this.saveOffsetsToState}

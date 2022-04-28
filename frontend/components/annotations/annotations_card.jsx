@@ -40,13 +40,13 @@ class AnnotationsCard extends React.Component {
         return (
             <div className="annotation-box-container">
                 <div className="annotation-box">
-                    <div className="annotation-hed">Ingenious Annotation</div>
+                    <div className="annotation-hed">Аннотация Пушкиниста</div>
                     {this.props.annotations[currentAnnotationId] ? this.props.annotations[currentAnnotationId].anno_body : null}
                     <VotesShow
                         currentAnnoObj={currentAnnoObj}
                     />
                     <div className="annotation-byline">
-                        {"Annotated by: "}
+                        {"Автор: "}
                     </div>
                     <div className="annotation-username">
                         {currentAnnoObj.username}
