@@ -11,8 +11,6 @@
 
         begin
             json.image_url asset_path("track_images/#{track.image_url}")
-        rescue
-            json.image_url track.image_url
         end
 
     end
